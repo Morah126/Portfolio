@@ -1,0 +1,211 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* .btn-primary {
+    background-color: red;
+} */
+
+.carousel-indicators li {
+    border-radius: 0%;
+    width: 30px;
+    height: 6px;
+
+}
+
+#scrollTopBtn {
+    background-image: url('../img/topBtn-01.jpg');
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background: #ccc;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+#header {
+    background-image: url('../img/curly.gif');
+    background-size: contain;
+    /* 把背景固定在後方 */
+    background-attachment: fixed;
+    padding: 200px 0;
+    border-radius: 0;
+    /* filter: brightness(0.5); */
+    position: relative;
+}
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+#header>.container {
+    position: relative;
+    z-index: 5;
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+
+/* 選擇id開頭是galleryImage的元素 */
+
+/*
+    [屬性^=值] : 選擇值開頭的元素
+    [屬性$=值] : 選擇值結尾的元素
+*/
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    filter: brightness(40%);
+}
+
+[id^='galleryImage']>.galleryText {
+    color: white;
+    line-height: 250px;
+    font-size: 6px;
+    opacity: 0;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+[id^='galleryImage'],
+.galleryText {
+    transition: all .3s hinge;
+}
+
+
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.galleryText {
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/eight-04.png');
+    margin: 5px;
+
+}
+
+#galleryImage2 {
+    background-image: url('../img/eight-11.png');
+    margin: 5px;
+}
+
+#galleryImage3 {
+    background-image: url('../img/eight-06.png');
+    margin: 5px;
+}
+
+#galleryImage4 {
+    background-image: url('../img/eight-07.png');
+    margin: 5px;
+
+}
+
+#galleryImage5 {
+    background-image: url('../img/eight-08.png');
+    margin: 5px;
+}
+
+#galleryImage6 {
+    background-image: url('../img/eight-09.png');
+    margin: 5px;
+}
+
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+
+h3,
+p,
+h1,
+h4,
+h2,
+h5,
+h6 {
+    font-family: monospace;
+
+}
